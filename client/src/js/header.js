@@ -10,3 +10,5 @@ just another text editor
 `;
 
 export { header };
+
+//added data to include the image
