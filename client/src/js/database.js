@@ -1,3 +1,5 @@
+
+//loads in openDB
 import { openDB } from 'idb';
 
 const initdb = async () =>
@@ -20,7 +22,7 @@ export const putDb = async (content) => {
   const store = tx.objectStore("jate");
   const request = store.put({ id: 1, value: content });
   const result = await request;
-  console.log("🚀 - data is now saved to the database 🚀", result.value);
+  console.log("🚀 🚀 - data is now saved to the database 🚀 🚀", result.value);
 };
 
 
@@ -38,3 +40,4 @@ export const getDb = async () => {
   return result?.value;
 };
 
+initdb();
